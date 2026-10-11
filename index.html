@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>생활화학제품 안전정보 대시보드</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Malgun Gothic", Arial, sans-serif;
+      background: #f4f7fb;
+      color: #253247;
+    }
+    header {
+      background: #17365d;
+      color: white;
+      padding: 35px 10%;
+    }
+    header h1 { margin: 0 0 12px; }
+    main {
+      max-width: 1100px;
+      margin: 35px auto;
+      padding: 0 20px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card, .panel {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px #0000000d;
+    }
+    .card h3 { color: #64748b; font-size: 16px; }
+    .card strong { font-size: 30px; color: #17365d; }
+    .panel { margin-top: 25px; }
+    .placeholder {
+      background: #eef3f9;
+      border: 2px dashed #cbd5e1;
+      padding: 65px 15px;
+      text-align: center;
+      border-radius: 10px;
+      color: #64748b;
+    }
+    footer {
+      text-align: center;
+      color: #64748b;
+      padding: 30px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>생활화학제품 안전정보 대시보드</h1>
+    <p>생활화학제품 위반 현황 및 안전정보 분석</p>
+  </header>
+
+  <main>
+    <h2>주요 현황</h2>
+    <p>※ 아래 수치는 홈페이지 작동 확인용 예시입니다.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>분석 대상 제품</h3>
+        <strong>5,000건</strong>
+      </div>
+      <div class="card">
+        <h3>위반 유형</h3>
+        <strong>8개</strong>
+      </div>
+      <div class="card">
+        <h3>분석 대상 품목</h3>
+        <strong>25개</strong>
+      </div>
+    </div>
+
+    <section class="panel">
+      <h2>품목별 위반 현황</h2>
+      <div class="placeholder">
+        향후 Python 분석 결과 및 그래프 표시 예정
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>프로젝트 소개</h2>
+      <p>
+        본 프로젝트는 생활화학제품 위반 데이터를 분석하여
+        주요 위반 품목과 유형을 파악하고,
+        제품 안전관리의 시사점을 도출하기 위한 프로젝트입니다.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    생활화학제품 데이터 분석 프로젝트 | 2026
+  </footer>
+
+</body>
+</html>
